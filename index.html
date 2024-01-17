@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <title>IGJ 2024 Submission</title>
+    <!-- Overall Idea: Have a tank in the middle of the screen that can be
+         continuously upgraded with shop items to add more fluid per second,
+         decrease the volume of the tank, etc and eventually work towards a 
+         black hole.
+    --> 
+    </head>
+
+    <body id="body">
+        <div class="header">Pressure Singularity 
+            <button type="button" class="btn btn-primary" onclick="save()">Save</button>
+            <button type="button" class="btn btn-primary" onclick="resetSave()">Reset</button>
+            <button type="button" class="btn btn-primary" onclick="changeFormat()" id="formatButton">SI</button></div>
+        </div>
+            
+            <div id="lower">
+                <div id="shopcolumn"class="column inline-block">
+                    <div id="buildings" class="m-0"></div>
+                    <div id="upgrades" class="m-0"></div>
+                </div>
+
+                <div class="column inline-block" id="main">
+                    <div>Pressure: <span id="Pressure"></span>P</div>
+                    <button type="button" class="btn btn-primary" onclick="gasClick()">Pump Gas</button>
+                    <div class="spacer"></div>
+                    <div id="Tank" class="bg-gray mx-auto">
+                        <div id="Tank2">
+                            <canvas id="gasCanvas">
+                                
+                            </canvas>
+                        </div>
+                    </div>
+                    <div>Volume: <span id="Volume"></span>L</div>   
+                    <div>Temperature: <span id = "Temperature"></span>K</div>
+                    <div><span id ="Gas"></span>: <span id="Mass"></span>g</div>  
+                </div>
+            </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="scripts/constants.js" defer></script>
+        <script src="scripts/formatNumber.js" defer></script>
+        <script src="scripts/Tank.js" defer></script>
+        <script src="scripts/Particles.js" defer></script>
+        <script src="scripts/Gasses.js" defer></script>
+        <script src="scripts/save.js" defer></script>
+        <script src="scripts/Shop.js" defer></script>
+        <script src="scripts/Game.js" defer></script>
+    </body>
+</html>

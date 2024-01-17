@@ -1,0 +1,228 @@
+body {
+    background-color: black !important;
+    margin: 0;
+    padding: 0;
+    overflow: hide;
+}
+
+.header {
+    background-color: rgba(44, 44, 44, .15);
+    height: 60px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.sch {
+    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
+
+}
+
+#upgrades {
+    overflow-y: visible;
+    overflow-x: visible;
+    padding-left: 10px;  
+    height: calc(50% - 60px);
+    text-align: left;
+
+}
+
+#buildings {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 10px;
+    height: calc(50% - 60px);
+    height: calc(50% - 60px);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(55, 55, 55, .5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.buildingImg{
+    height: 80px;
+    width: 80px;
+}
+
+div:hover + .hoverText{
+    display: block;
+    background-color: #222222;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    z-index: 1;
+}
+
+.upgradeItem {
+    height: 60px;
+    width: 60px;
+    font-size: medium;
+    background-color: rgba(90, 90, 90, 0.3);
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+
+}
+
+.popupcontainer {
+    position: relative;
+    width: 0;
+    height: 0;
+    left: 63px;
+    bottom: 75px;
+}
+
+.popup {
+    position: absolute;
+    background-color: gray;
+    width: 200px;
+    z-index: 99 !important;
+    overflow: show;
+}
+
+.shopItem .popup {
+    display: none;
+}
+
+.shopItem:hover .popup {
+    display: block;
+}
+
+.upgradeItem .popup {
+    display: none;
+}
+
+.upgradeItem:hover .popup {
+    display: block;
+}
+
+.shopItem {
+    height: 80px;
+    width: auto;
+    font-size: medium;
+    background-color: rgba(90, 90, 90, 0.3);
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.m-7 {
+    margin-right: 5px;
+}
+
+.fs-8 {
+    font-size: 18px; 
+}
+
+.fs-7 {
+    font-size: 50px;
+}
+
+.shift1 {
+    bottom: -57%;
+    position: relative;
+}
+
+.spacer {
+    height: 15vh;
+}
+
+#Tank {
+    border-radius: 50%;
+    text-align: center;
+    opacity: 0;
+}
+
+#Tank2 {
+    background-color: rgba(33, 33, 33, .95);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 6px;
+    border-color: #545454;
+    position: relative;
+    width: 95%;
+    height: 95%;
+    bottom: -2.5%;
+    left: 2.5%;
+}
+
+#gasCanvas {
+    border-radius: 50%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.column{
+    float: left;
+}
+
+#lower{
+    position: absolute;
+    background-image: url("resources/bg.jpg");
+    background-position: center;
+    width: 100%;
+    top: 60px;
+    bottom: 0;
+}
+
+#shopcolumn{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    float: left;
+    width: 270px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-align: center;
+}
+
+#main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 270px;
+    overflow: hidden;
+    width: calc(100% - 270px);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-align: center;
+}
+
+#intro {
+    width: 100%;
+    height: calc(100vh + 80px);
+    top: -80px;
+    z-index: 2;
+    background-color: black;
+    position: fixed;
+    overflow: hide;
+}
+
+.intro2 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.sbtn {
+    position: absolute;
+    top: calc(100% - 80px);
+    left: calc(50% - 45px);
+}
